@@ -11,39 +11,50 @@
 		<title>Score Keeper</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="columns">
-				<div class="column is-half is-offset-one-quarter">
-					<div class="card">
-						<header class="card-header">
-							<p class="card-header-title">Score Keeper!!!</p>
-						</header>
-						<div class="card-content">
-							<div class="content">
-								<h1 class="title is-1">
-									<span id="p1Display">0</span> to <span id="p2Display">0</span>
-								</h1>
-								<p>Use the buttons below to keep score</p>
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-half is-offset-one-quarter">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-2by1">
+									<img
+										src="https://images.unsplash.com/photo-1601283220664-300f46e9e85a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+										alt=""
+										srcset=""
+									/>
+								</figure>
+							</div>
+							<header class="card-header">
+								<p class="card-header-title">Score Keeper!!!</p>
+							</header>
+							<div class="card-content">
+								<div class="content">
+									<h1 class="title is-1">
+										<span id="p1Display">0</span> to <span id="p2Display">0</span>
+									</h1>
+									<p>Use the buttons below to keep score</p>
 
-								<label for="playTo" class="label is-inline is-large">Playing to:</label>
-								<div class="select is-rounded">
-									<select name="" id="playTo">
-										<option value="3">3</option>
-										<option value="5">5</option>
-										<option value="7">7</option>
-									</select>
+									<label for="playTo" class="label is-inline is-large">Playing to:</label>
+									<div class="select is-rounded">
+										<select name="" id="playTo">
+											<option value="3">3</option>
+											<option value="5">5</option>
+											<option value="7">7</option>
+										</select>
+									</div>
 								</div>
 							</div>
+							<footer class="card-footer">
+								<button id="p1Button" class="button is-primary card-footer-item">+1 Player One</button>
+								<button id="p2Button" class="button is-link card-footer-item">+1 Player Two</button>
+								<button id="resetButton" class="button is-primary card-footer-item">Reset</button>
+							</footer>
 						</div>
-						<footer class="card-footer">
-							<button id="p1Button" class="button is-primary card-footer-item">+1 Player One</button>
-							<button id="p2Button" class="button is-link card-footer-item">+1 Player Two</button>
-							<button id="resetButton" class="button is-primary card-footer-item">Reset</button>
-						</footer>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<script src="./app.js"></script>
 	</body>
